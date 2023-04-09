@@ -1,791 +1,812 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>COMPUTER SCIENCE</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        HackMD - Collaborative Markdown Knowledge Base
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">COMPUTER SCIENCE</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{background-color:#f7f7f7;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p:last-child{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body .alert>p:last-child,.markdown-body .alert>ul:last-child{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Calculus%20I/" class="nav-link">Calculus I</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="Calculus%20I/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="2"><a href="#2-" class="nav-link">جدول (2)- عنوان و مشخصات کلی دروس پایه</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#3-" class="nav-link">جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی.</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">جدول (۴) – عنوان و مشخصات کلی دروس اختیاری</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
-
-<p><strong><th align="right" >جدول عناوین و مشخصات دروس </th></strong></p>
-<h2 id="2-"><strong>جدول (2)- عنوان و مشخصات کلی دروس پایه</strong></h2>
-<table>
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" dir="rtl"><p><strong><span>جدول عناوین و مشخصات دروس</span></strong></p><h2 id="جدول-۲--عنوان-و-مشخصات-کلی-دروس-پایه" data-id="جدول-۲--عنوان-و-مشخصات-کلی-دروس-پایه"><a class="anchor hidden-xs" href="#جدول-۲--عنوان-و-مشخصات-کلی-دروس-پایه" title="جدول-۲--عنوان-و-مشخصات-کلی-دروس-پایه"><span class="octicon octicon-link"></span></a><strong><span>جدول (۲)- عنوان و مشخصات کلی دروس پایه</span></strong></h2><table>
 <thead>
 <tr>
-<th align="center"><a name="_hlk92987125"></a><strong>ردیف</strong></th>
-<th align="center"><strong>عنوان درس</strong></th>
-<th align="center"><strong>تعداد واحد</strong></th>
-<th align="center"><strong>نوع واحد</strong></th>
-<th align="center"><strong>پیشنیاز / همنیاز</strong></th>
+<th style="text-align:center"><a target="_blank" rel="noopener"></a><strong><span>ردیف</span></strong></th>
+<th style="text-align:center"><strong><span>عنوان درس</span></strong></th>
+<th style="text-align:center"><strong><span>تعداد واحد</span></strong></th>
+<th style="text-align:center"><strong><span>نوع واحد</span></strong></th>
+<th style="text-align:center"><strong><span>پیشنیاز / همنیاز</span></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">1</td>
-<td align="center"><strong>ریاضی عمومی 1</strong></td>
-<td align="center"><strong>4</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۱</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/r1CZdEkz3" target="_blank" rel="noopener"><span>ریاضی عمومی ۱</span></a></strong></td>
+<td style="text-align:center"><strong><span>۴</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">2</td>
-<td align="center"><strong>ریاضی عمومی 2</strong></td>
-<td align="center"><strong>4</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"><strong>ریاضی عمومی 1</strong></td>
+<td style="text-align:center"><span>۲</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/calculusII" target="_blank" rel="noopener"><span>ریاضی عمومی ۲</span></a></strong></td>
+<td style="text-align:center"><strong><span>۴</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/r1CZdEkz3" target="_blank" rel="noopener"><strong><span>ریاضی عمومی ۱</span></strong></a></td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center"><strong>ریاضی برای علوم کامپیوتر</strong></td>
-<td align="center"><strong>3</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"><strong>هم‌نیاز با ریاضی عمومی 2</strong></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Mathematics-for-computer-science" target="_blank" rel="noopener"><span>ریاضی برای علوم کامپیوتر</span></a></strong></td>
+<td style="text-align:center"><strong><span>۳</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/calculusII" target="_blank" rel="noopener"><strong><span>ریاضی عمومی ۲</span></strong></a></td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center"><strong>مبانی کامپیوتر و برنامه سازی</strong></td>
-<td align="center"><strong>3</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۴</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Introduction-to-Computer-and-Programming" target="_blank" rel="noopener"><span>مبانی کامپیوتر و برنامه سازی</span></a></strong></td>
+<td style="text-align:center"><strong><span>۳</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center"><strong>مبانی اقتصاد</strong></td>
-<td align="center"><strong>2</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۵</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Basics-of-Economics" target="_blank" rel="noopener"><span>مبانی اقتصاد</span></a></strong></td>
+<td style="text-align:center"><strong><span>۲</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center"><strong>کارگاه کامپیوتر 1</strong></td>
-<td align="center"><strong>1</strong></td>
-<td align="center"><strong>عملی</strong></td>
-<td align="center"><strong>همزمان با درس مبانی کامپیوتر و برنامه سازی</strong></td>
+<td style="text-align:center"><span>۶</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/H1csPBkzn" target="_blank" rel="noopener"><span>کارگاه مبانی کامپیوتر و برنامه سازی</span></a></strong></td>
+<td style="text-align:center"><strong><span>۱</span></strong></td>
+<td style="text-align:center"><strong><span>عملی</span></strong></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Introduction-to-Computer-and-Programming" target="_blank" rel="noopener"><span>همنیاز با مبانی کامپیوتر و برنامه سازی</span></a></strong></td>
 </tr>
 <tr>
-<td align="center">7</td>
-<td align="center"><strong>مبانی علوم ریاضی</strong></td>
-<td align="center"><strong>۳</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۷</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Foundation-of-Mathematics" target="_blank" rel="noopener"><span> مبانی علوم ریاضی</span></a></strong></td>
+<td style="text-align:center"><strong><span>۳</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">8</td>
-<td align="center"><strong>احتمال ۱</strong></td>
-<td align="center"><strong>3</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۸</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Sk2j5HyG2" target="_blank" rel="noopener"><span> احتمال ۱</span></a></strong></td>
+<td style="text-align:center"><strong><span>۳</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center"><strong>تحلیل گرافیکی و اکتشافی داده‌ها</strong></td>
-<td align="center"><strong>۲</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۹</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Graphical-and-Exploratory-data-analysis" target="_blank" rel="noopener"><span> تحلیل گرافیکی و اکتشافی داده ها</span></a></strong></td>
+<td style="text-align:center"><strong><span>۲</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center"><strong>احتمال مقدماتی</strong></td>
-<td align="center"><strong>۱</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۱۰</span></td>
+<td style="text-align:center"><strong><a href="https://hackmd.io/@mi9DyCHBTBysBcPECILFaA/Elementary-Probability" target="_blank" rel="noopener"><span> احتمال مقدماتی</span></a></strong></td>
+<td style="text-align:center"><strong><span>۱</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center"></td>
-<td align="center"><strong>جمع</strong></td>
-<td align="center">26</td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong><span>جمع</span></strong></td>
+<td style="text-align:center"><span>۲۶</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center"><a name="_hlk929871251"></a></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener"></a></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
-</table>
-<p><code></code>اخذ همه 26 واحد این جدول الزامی است.</p>
-<h2 id="3-"><strong>جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی</strong>.</h2>
-<table>
+</table><p><code>		 	 </code><span>اخذ همه 26 واحد این جدول الزامی است.</span></p><h2 id="جدول-3-عنوان-و-مشخصات-کلی-دروس-الزامی-تخصصی" data-id="جدول-3-عنوان-و-مشخصات-کلی-دروس-الزامی-تخصصی"><a class="anchor hidden-xs" href="#جدول-3-عنوان-و-مشخصات-کلی-دروس-الزامی-تخصصی" title="جدول-3-عنوان-و-مشخصات-کلی-دروس-الزامی-تخصصی"><span class="octicon octicon-link"></span></a><strong><span>جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی</span></strong><span>.</span></h2><table>
 <thead>
 <tr>
-<th align="center"><a name="_hlk92987331"></a><strong>ردیف</strong></th>
-<th align="center"><strong>عنوان درس</strong></th>
-<th align="center"><strong>تعداد واحد</strong></th>
-<th align="center"><strong>نوع واحد</strong></th>
-<th align="center"><strong>پیشنیاز / همنیاز</strong></th>
+<th style="text-align:center"><a target="_blank" rel="noopener"></a><strong><span>ردیف</span></strong></th>
+<th style="text-align:center"><strong><span>عنوان درس</span></strong></th>
+<th style="text-align:center"><strong><span>تعداد واحد</span></strong></th>
+<th style="text-align:center"><strong><span>نوع واحد</span></strong></th>
+<th style="text-align:center"><strong><span>پیشنیاز / همنیاز</span></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">1</td>
-<td align="center"><strong>برنامه‌نویسی پیشرفته</strong></td>
-<td align="center"><strong>3</strong></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"><strong>مبانی کامپیوتر و برنامه‌سازی</strong></td>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><strong><span>برنامه‌نویسی پیشرفته</span></strong></td>
+<td style="text-align:center"><strong><span>3</span></strong></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><strong><span>مبانی کامپیوتر و برنامه‌سازی</span></strong></td>
 </tr>
 <tr>
-<td align="center">2</td>
-<td align="center">برنامه‌نویسی پایتون</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی کامپیوتر و برنامه‌سازی</td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>برنامه‌نویسی پایتون</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی کامپیوتر و برنامه‌سازی</span></td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center">ساختمان داده‌ها و الگوریتم‌ها</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">برنامه‌سازی پیشرفته (در صورت موافقت استاد راهنما، هم نیازی ممکن است)</td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>ساختمان داده‌ها و الگوریتم‌ها</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>برنامه‌سازی پیشرفته (در صورت موافقت استاد راهنما، هم نیازی ممکن است)</span></td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">طراحی و تحلیل الگوریتم‌ها</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>طراحی و تحلیل الگوریتم‌ها</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">کارگاه کامپیوتر ۲</td>
-<td align="center">۱</td>
-<td align="center"><strong>عملی</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>کارگاه کامپیوتر ۲</span></td>
+<td style="text-align:center"><span>۱</span></td>
+<td style="text-align:center"><strong><span>عملی</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center">پایگاه داده‌ها</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ساختمان داده‌ها و الگوریتم‌ها</td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>پایگاه داده‌ها</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ساختمان داده‌ها و الگوریتم‌ها</span></td>
 </tr>
 <tr>
-<td align="center">7</td>
-<td align="center">اصول سیستم‌های کامپیوتری</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>اصول سیستم‌های کامپیوتری</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">8</td>
-<td align="center">مبانی ترکیبیات</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی علوم ریاضی</td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>مبانی ترکیبیات</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی علوم ریاضی</span></td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center">مبانی منطق و نظریه مجموعه‌ها</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>مبانی منطق و نظریه مجموعه‌ها</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">۱0</td>
-<td align="center">بهینه‌سازی ترکیبیاتی</td>
-<td align="center"></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۱0</span></td>
+<td style="text-align:center"><span>بهینه‌سازی ترکیبیاتی</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">۱1</td>
-<td align="center">مبانی نظریه محاسبه</td>
-<td align="center"></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۱1</span></td>
+<td style="text-align:center"><span>مبانی نظریه محاسبه</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">۱2</td>
-<td align="center">مبانی ماتریس‌ها و جبرخطی</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی علوم ریاضی</td>
+<td style="text-align:center"><span>۱2</span></td>
+<td style="text-align:center"><span>مبانی ماتریس‌ها و جبرخطی</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی علوم ریاضی</span></td>
 </tr>
 <tr>
-<td align="center">۱3</td>
-<td align="center">بهینه‌سازی در یادگیری ماشین</td>
-<td align="center"></td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۱3</span></td>
+<td style="text-align:center"><span>بهینه‌سازی در یادگیری ماشین</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">۱4</td>
-<td align="center">مبانی آنالیز عددی</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ریاضی عمومی 2</td>
+<td style="text-align:center"><span>۱4</span></td>
+<td style="text-align:center"><span>مبانی آنالیز عددی</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ریاضی عمومی 2</span></td>
 </tr>
 <tr>
-<td align="center">۱5</td>
-<td align="center">مبانی آنالیز ریاضی</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ریاضی عمومی 2</td>
+<td style="text-align:center"><span>۱5</span></td>
+<td style="text-align:center"><span>مبانی آنالیز ریاضی</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ریاضی عمومی 2</span></td>
 </tr>
 <tr>
-<td align="center">16</td>
-<td align="center">جبرخطی عددی</td>
-<td align="center">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی ماتریس‌ها و جبرخطی</td>
+<td style="text-align:center"><span>16</span></td>
+<td style="text-align:center"><span>جبرخطی عددی</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی ماتریس‌ها و جبرخطی</span></td>
 </tr>
 <tr>
-<td align="center">17</td>
-<td align="center">احتمال ۲</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"><span>احتمال ۲</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">۱۸</td>
-<td align="center">آمار محاسباتی</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>۱۸</span></td>
+<td style="text-align:center"><span>آمار محاسباتی</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">19</td>
-<td align="center">روش‌های آماری</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>19</span></td>
+<td style="text-align:center"><span>روش‌های آماری</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">20</td>
-<td align="center">یادگیری آماری مقدماتی</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>20</span></td>
+<td style="text-align:center"><span>یادگیری آماری مقدماتی</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">21</td>
-<td align="center">داده‌کاوی مقدماتی</td>
-<td align="center">۳</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:center"><span>21</span></td>
+<td style="text-align:center"><span>داده‌کاوی مقدماتی</span></td>
+<td style="text-align:center"><span>۳</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center"></td>
-<td align="center"><strong>جمع واحد ها</strong></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong><span>جمع واحد ها</span></strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
-</table>
-<p><a name="_hlk929873311"></a>    گذراندن همه دروس این جدول الزامی است (.. واحد).</p>
-<h2 id="_1"><strong>جدول (۴) – عنوان و مشخصات کلی دروس اختیاری</strong></h2>
-<table>
+</table><p><a target="_blank" rel="noopener"></a><span>	گذراندن همه دروس این جدول الزامی است (… واحد).</span></p><h2 id="جدول-۴-–-عنوان-و-مشخصات-کلی-دروس-اختیاری" data-id="جدول-۴-–-عنوان-و-مشخصات-کلی-دروس-اختیاری"><a class="anchor hidden-xs" href="#جدول-۴-–-عنوان-و-مشخصات-کلی-دروس-اختیاری" title="جدول-۴-–-عنوان-و-مشخصات-کلی-دروس-اختیاری"><span class="octicon octicon-link"></span></a><strong><span>جدول (۴) – عنوان و مشخصات کلی دروس اختیاری</span></strong></h2><table>
 <thead>
 <tr>
-<th align="left"><strong>ردیف</strong></th>
-<th align="left"><strong>عنوان درس</strong></th>
-<th align="left"><strong>تعداد واحد</strong></th>
-<th align="center"><strong>نوع واحد</strong></th>
-<th align="center"><strong>پیش نیاز / هم نیاز</strong></th>
+<th style="text-align:left"><strong><span>ردیف</span></strong></th>
+<th style="text-align:center"><strong><span>عنوان درس</span></strong></th>
+<th style="text-align:left"><strong><span>تعداد واحد</span></strong></th>
+<th style="text-align:center"><strong><span>نوع واحد</span></strong></th>
+<th style="text-align:center"><strong><span>پیش نیاز / هم نیاز</span></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">1</td>
-<td align="left">نظریه محاسبه</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی نظریه محاسبه</td>
+<td style="text-align:left"><span>1</span></td>
+<td style="text-align:center"><span>نظریه محاسبه</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی نظریه محاسبه</span></td>
 </tr>
 <tr>
-<td align="left">2</td>
-<td align="left">نظریه زبانها و ماشینها</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ساختمان داده والگوریتم ها**</td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><span>نظریه زبانها و ماشینها</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ساختمان داده والگوریتم ها**</span></td>
 </tr>
 <tr>
-<td align="left">2</td>
-<td align="left">منطق برای علوم کامپیوتر</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی علوم ریاضی</td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><span>منطق برای علوم کامپیوتر</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی علوم ریاضی</span></td>
 </tr>
 <tr>
-<td align="left">4</td>
-<td align="left">نظریه مقدماتی کدگذاری</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی جبر، مبانی ماتریس‌ها و جبرخطی</td>
+<td style="text-align:left"><span>4</span></td>
+<td style="text-align:center"><span>نظریه مقدماتی کدگذاری</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی جبر، مبانی ماتریس‌ها و جبرخطی</span></td>
 </tr>
 <tr>
-<td align="left">5</td>
-<td align="left"><code></code>رمزنگاری</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی جبر</td>
+<td style="text-align:left"><span>5</span></td>
+<td style="text-align:center"><code> </code><span>رمزنگاری</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی جبر</span></td>
 </tr>
 <tr>
-<td align="left">6</td>
-<td align="left">برنامه‌نویسی امن</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ساختمان داده و الکوریتم ها**</td>
+<td style="text-align:left"><span>6</span></td>
+<td style="text-align:center"><span>برنامه‌نویسی امن</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ساختمان داده و الکوریتم ها**</span></td>
 </tr>
 <tr>
-<td align="left">7</td>
-<td align="left">معناشناسی عملیاتی برنامه‌نویسی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">منطق برای علوم کامپیوتر</td>
+<td style="text-align:left"><span>7</span></td>
+<td style="text-align:center"><span>معناشناسی عملیاتی برنامه‌نویسی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>منطق برای علوم کامپیوتر</span></td>
 </tr>
 <tr>
-<td align="left">8</td>
-<td align="left">آشنایی با نظریه بازی‌ها</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>8</span></td>
+<td style="text-align:center"><span>آشنایی با نظریه بازی‌ها</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">9</td>
-<td align="left"><code></code>الگوریتم های تصادفی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">طراحی و تحلیل الگوریتم ها،  مبانی احتمال</td>
+<td style="text-align:left"><span>9</span></td>
+<td style="text-align:center"><code> </code><span>الگوریتم های تصادفی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>طراحی و تحلیل الگوریتم ها،  مبانی احتمال</span></td>
 </tr>
 <tr>
-<td align="left">10</td>
-<td align="left">هندسه محاسباتی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>10</span></td>
+<td style="text-align:center"><span>هندسه محاسباتی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">11</td>
-<td align="left">رگرسیون ۱</td>
-<td align="left"><a name="ole_link21"></a>3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>11</span></td>
+<td style="text-align:center"><span>رگرسیون ۱</span></td>
+<td style="text-align:left"><a target="_blank" rel="noopener"></a><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">12</td>
-<td align="left">سری های زمانی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">آمار و احتمال 1</td>
+<td style="text-align:left"><span>12</span></td>
+<td style="text-align:center"><span>سری های زمانی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>آمار و احتمال 1</span></td>
 </tr>
 <tr>
-<td align="left">13</td>
-<td align="left"><code></code>هوش مصنوعی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ساختمان داده‌ و الگوریتم ها</td>
+<td style="text-align:left"><span>13</span></td>
+<td style="text-align:center"><code> </code><span>هوش مصنوعی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ساختمان داده‌ و الگوریتم ها</span></td>
 </tr>
 <tr>
-<td align="left">14</td>
-<td align="left">هوش محاسباتی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>14</span></td>
+<td style="text-align:center"><span>هوش محاسباتی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">15</td>
-<td align="left">آشنایی با یادگیری ماشینی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>15</span></td>
+<td style="text-align:center"><span>آشنایی با یادگیری ماشینی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">16</td>
-<td align="left">هوش تجاری مقدماتی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>16</span></td>
+<td style="text-align:center"><span>هوش تجاری مقدماتی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">17</td>
-<td align="left">آشنایی با تحلیل کلان داده‌ها</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>17</span></td>
+<td style="text-align:center"><span>آشنایی با تحلیل کلان داده‌ها</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">18</td>
-<td align="left">آشنایی با یادگیری عمیق</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">یادگیری آماری مقدماتی</td>
+<td style="text-align:left"><span>18</span></td>
+<td style="text-align:center"><span>آشنایی با یادگیری عمیق</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>یادگیری آماری مقدماتی</span></td>
 </tr>
 <tr>
-<td align="left">19</td>
-<td align="left">اصول مصورسازی داده‌ها</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>19</span></td>
+<td style="text-align:center"><span>اصول مصورسازی داده‌ها</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">20</td>
-<td align="left">مبانی طراحی کسب و کارهای نوپا</td>
-<td align="left">2</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>20</span></td>
+<td style="text-align:center"><span>مبانی طراحی کسب و کارهای نوپا</span></td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">21</td>
-<td align="left">مدیریت پروژه‌های فناوری اطلاعات</td>
-<td align="left">2</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>21</span></td>
+<td style="text-align:center"><span>مدیریت پروژه‌های فناوری اطلاعات</span></td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">22</td>
-<td align="left"><a name="ole_link2"></a>تجارت الکترونیکی</td>
-<td align="left">2</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>22</span></td>
+<td style="text-align:center"><a target="_blank" rel="noopener"></a><span>تجارت الکترونیکی</span></td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">23</td>
-<td align="left">مبانی و اصول مدیریت</td>
-<td align="left">2</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>23</span></td>
+<td style="text-align:center"><span>مبانی و اصول مدیریت</span></td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">24</td>
-<td align="left">مدلسازی ریاضی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>24</span></td>
+<td style="text-align:center"><span>مدلسازی ریاضی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">25</td>
-<td align="left">ریاضیات فازی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>25</span></td>
+<td style="text-align:center"><span>ریاضیات فازی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">26</td>
-<td align="left">نرم افزارهای ریاضی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>26</span></td>
+<td style="text-align:center"><span>نرم افزارهای ریاضی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">27</td>
-<td align="left">بهینه سازی پویا</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی آنالیز عددی</td>
+<td style="text-align:left"><span>27</span></td>
+<td style="text-align:center"><span>بهینه سازی پویا</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی آنالیز عددی</span></td>
 </tr>
 <tr>
-<td align="left">28</td>
-<td align="left">تحقیق در عملیات</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>28</span></td>
+<td style="text-align:center"><span>تحقیق در عملیات</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">29</td>
-<td align="left">نظریه گراف و کاربردها</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">بهینه‌سازی خطی</td>
+<td style="text-align:left"><span>29</span></td>
+<td style="text-align:center"><span>نظریه گراف و کاربردها</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>بهینه‌سازی خطی</span></td>
 </tr>
 <tr>
-<td align="left">30</td>
-<td align="left">مبانی جبر</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی ترکیبیات</td>
+<td style="text-align:left"><span>30</span></td>
+<td style="text-align:center"><span>مبانی جبر</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی ترکیبیات</span></td>
 </tr>
 <tr>
-<td align="left">31</td>
-<td align="left">آنالیز تابعی مقدماتی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی علوم ریاضی</td>
+<td style="text-align:left"><span>31</span></td>
+<td style="text-align:center"><span>آنالیز تابعی مقدماتی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی علوم ریاضی</span></td>
 </tr>
 <tr>
-<td align="left">32</td>
-<td align="left">پردازش تصویر مقدماتی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی کامپیوتر و برنامه‌سازی</td>
+<td style="text-align:left"><span>32</span></td>
+<td style="text-align:center"><span>پردازش تصویر مقدماتی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی کامپیوتر و برنامه‌سازی</span></td>
 </tr>
 <tr>
-<td align="left">33</td>
-<td align="left">برنامه‌نویسی موبایل</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>33</span></td>
+<td style="text-align:center"><span>برنامه‌نویسی موبایل</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">34</td>
-<td align="left">برنامه‌نویسی وب</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>34</span></td>
+<td style="text-align:center"><span>برنامه‌نویسی وب</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">35</td>
-<td align="left">شبکه‌های کامپیوتری</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>35</span></td>
+<td style="text-align:center"><span>شبکه‌های کامپیوتری</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">36</td>
-<td align="left">شبیه‌سازی کامپیوتری</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">آمار و احتمال 1</td>
+<td style="text-align:left"><span>36</span></td>
+<td style="text-align:center"><span>شبیه‌سازی کامپیوتری</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>آمار و احتمال 1</span></td>
 </tr>
 <tr>
-<td align="left">37</td>
-<td align="left">زبان‌های برنامه‌سازی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ساختمان داده‌ها و الگوریتم‌ها</td>
+<td style="text-align:left"><span>37</span></td>
+<td style="text-align:center"><span>زبان‌های برنامه‌سازی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ساختمان داده‌ها و الگوریتم‌ها</span></td>
 </tr>
 <tr>
-<td align="left">38</td>
-<td align="left">گرافیک کامپیوتری</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">ساختمان داده‌ها و الگوریتم‌ها</td>
+<td style="text-align:left"><span>38</span></td>
+<td style="text-align:center"><span>گرافیک کامپیوتری</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>ساختمان داده‌ها و الگوریتم‌ها</span></td>
 </tr>
 <tr>
-<td align="left">39</td>
-<td align="left">شبکه های اجتماعی</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">مبانی ترکیبیات</td>
+<td style="text-align:left"><span>39</span></td>
+<td style="text-align:center"><span>شبکه های اجتماعی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>مبانی ترکیبیات</span></td>
 </tr>
 <tr>
-<td align="left">40</td>
-<td align="left">اصول سیستم‌های عامل</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>40</span></td>
+<td style="text-align:center"><span>اصول سیستم‌های عامل</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">41</td>
-<td align="left">اصول طراحی نرم افزار</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>41</span></td>
+<td style="text-align:center"><span>اصول طراحی نرم افزار</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">42</td>
-<td align="left">کامپایلر</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>42</span></td>
+<td style="text-align:center"><span>کامپایلر</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">43</td>
-<td align="left">مباحثی در علوم کامپیوتر</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>43</span></td>
+<td style="text-align:center"><span>مباحثی در علوم کامپیوتر</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left">44</td>
-<td align="left">مبانی بیوانفورماتیک</td>
-<td align="left">3</td>
-<td align="center"><strong>نظری</strong></td>
-<td align="center">زیست شناسی سلولی و مولکولی</td>
+<td style="text-align:left"><span>44</span></td>
+<td style="text-align:center"><span>مبانی بیوانفورماتیک</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>نظری</span></strong></td>
+<td style="text-align:center"><span>زیست شناسی سلولی و مولکولی</span></td>
 </tr>
 <tr>
-<td align="left">45</td>
-<td align="left">پروژه کارشناسی</td>
-<td align="left">3</td>
-<td align="center"><strong>عملی</strong></td>
-<td align="center"><code></code>گذراندن 75 واحد</td>
+<td style="text-align:left"><span>45</span></td>
+<td style="text-align:center"><span>پروژه کارشناسی</span></td>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:center"><strong><span>عملی</span></strong></td>
+<td style="text-align:center"><code>  </code><span>گذراندن 75 واحد</span></td>
 </tr>
 <tr>
-<td align="left">46</td>
-<td align="left">کارآموزی</td>
-<td align="left">2</td>
-<td align="center"><strong>عملی</strong></td>
-<td align="center"></td>
+<td style="text-align:left"><span>46</span></td>
+<td style="text-align:center"><span>کارآموزی</span></td>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:center"><strong><span>عملی</span></strong></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>جمع واحد ها</strong></td>
-<td align="left"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"><strong><span>جمع واحد ها</span></strong></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
-</table>
-<p>از جدول دروس اختیاری  بین ۲۲  تا ۲۷ واحد باید اخذ شود، که علاوه بر دروس جدول فوق می‌تواند شامل: ۱) حداکثر ۲ درس ارشد (با سقف ۶ واحد) از دروس دوره‌های ارشد علوم کامپیوتر و ۲) حداکثر 6 واحد از دروس سایر رشته ها (خارج رشته) باشد.</p></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+</table><p><span>از جدول دروس اختیاری  بین ۲۲  تا ۲۷ واحد باید اخذ شود، که علاوه بر دروس جدول فوق می‌تواند شامل: ۱) حداکثر ۲ درس ارشد (با سقف ۶ واحد) از دروس دوره‌های ارشد علوم کامپیوتر و ۲) حداکثر 6 واحد از دروس سایر رشته ها (خارج رشته) باشد.</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#جدول-۲--عنوان-و-مشخصات-کلی-دروس-پایه" title="جدول (۲)- عنوان و مشخصات کلی دروس پایه">جدول (۲)- عنوان و مشخصات کلی دروس پایه</a></li>
+<li><a href="#جدول-3-عنوان-و-مشخصات-کلی-دروس-الزامی-تخصصی" title="جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی.">جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی.</a></li>
+<li><a href="#جدول-۴-–-عنوان-و-مشخصات-کلی-دروس-اختیاری" title="جدول (۴) – عنوان و مشخصات کلی دروس اختیاری">جدول (۴) – عنوان و مشخصات کلی دروس اختیاری</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null dir="rtl">
+        <div class="toc"><ul class="nav">
+<li><a href="#جدول-۲--عنوان-و-مشخصات-کلی-دروس-پایه" title="جدول (۲)- عنوان و مشخصات کلی دروس پایه">جدول (۲)- عنوان و مشخصات کلی دروس پایه</a></li>
+<li><a href="#جدول-3-عنوان-و-مشخصات-کلی-دروس-الزامی-تخصصی" title="جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی.">جدول (3)-عنوان و مشخصات کلی دروس الزامی-تخصصی.</a></li>
+<li><a href="#جدول-۴-–-عنوان-و-مشخصات-کلی-دروس-اختیاری" title="جدول (۴) – عنوان و مشخصات کلی دروس اختیاری">جدول (۴) – عنوان و مشخصات کلی دروس اختیاری</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
     </div>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
 
-    </body>
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
 </html>
-
-<!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-04-08 07:22:12.056554+00:00
--->
